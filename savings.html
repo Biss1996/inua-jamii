@@ -122,7 +122,7 @@
 <body>
     <div class="container">
         <h1>Zenka Kash</h1>
-        <p class="subtitle">Dear <strong style="font-weight: bolder; color: #00c853;" id="usernames">Customer,</strong> you qualify for a loan of upto <strong style="color: black;">Ksh 12,500</strong>. Choose your savings plan to continue to loan application.</p>        
+        <p class="subtitle">Dear <strong style="font-weight: bolder; color: #00c853;" id="usernames">Customer,</strong> you qualify for a loan of upto <strong style="color: black;">Ksh 60,500</strong>. Choose your savings plan to continue to loan application.</p>        
         <div class="radio-group" id="savingsOptions"></div>
         <div class="result" id="resultLabel">Select a savings amount to see your loan limit</div>
         <button class="proceed-btn" id="proceedBtn" disabled>Proceed</button>
@@ -139,13 +139,13 @@
         }
         
         const plans = [
-            {savings: 120, limit: getRandomLimit(2500, 3500)},
-            {savings: 170, limit: getRandomLimit(4000, 5000)},
-            {savings: 220, limit: getRandomLimit(6000, 7000)},
-            {savings: 300, limit: getRandomLimit(7000, 10000)},
-            {savings: 450, limit: getRandomLimit(10000, 14000)},
-            {savings: 950, limit: getRandomLimit(14000, 19000)},
-            {savings: 1550, limit: getRandomLimit(20000, 25000)}
+            {savings: 220, limit: getRandomLimit(5000, 10000)},
+            {savings: 250, limit: getRandomLimit(10001, 20000)},
+            {savings: 270, limit: getRandomLimit(20001, 30000)},
+            {savings: 300, limit: getRandomLimit(30001, 40000)},
+            {savings: 450, limit: getRandomLimit(40001, 50000)},
+            {savings: 950, limit: getRandomLimit(50001, 60000)},
+            {savings: 1550, limit: getRandomLimit(60001, 70000)}
         ];
 
         const savingsOptions = document.getElementById('savingsOptions');
