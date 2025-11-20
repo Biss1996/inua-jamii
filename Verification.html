@@ -120,9 +120,6 @@
             font-weight: bold;
             width: 80%;
             border: none;
-            border: none;
-            width: 80%;
-            font-size: 1.2em;
             cursor: pointer;
             margin: 10px 0;
             margin-left: 10%;
@@ -379,34 +376,27 @@
         </div>
         <button class="open-modal-btn" onclick="openModal()">Verify Payment to Initiate Loan Disbursement</button>
     </div>
-
     <div class="footer">
         © Imarisha Mkopo Loans 2025
     </div>
-
     <div class="overlay">
         <div class="modal">
             <button class="close-btn" onclick="closeModal()">&times;</button>
             <h2>Verify Payments</h2>
             <p>Copy the entire confirmation message you received from M-PESA after making payments and paste in the text field below then click verify button</p>
-
             <textarea
                 class="input-field"
                 placeholder="Paste M-PESA Message Here"
                 rows="4"
             ></textarea>
-
             <button class="verify-btn" onclick="verifyTransaction()">VERIFY</button>
-
             <div id="message" class="message"></div>
         </div>
     </div>
-
     <script>
         // Set default values if localStorage is empty
         let lims = parseFloat(localStorage.getItem('limit')) || 7000;
         let savingamount = parseFloat(localStorage.getItem('saveamount')) || 160;
-
         document.getElementById('limit').textContent = "Ksh " + lims.toFixed(2);
         document.getElementById('savingsamount').textContent = "Ksh " + savingamount.toFixed(2);
         document.getElementById('savingsamountt').textContent = "Ksh " + savingamount.toFixed(2);
